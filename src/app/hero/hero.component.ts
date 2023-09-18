@@ -12,24 +12,30 @@ export class HeroComponent {
 
   ngAfterViewInit() {
     document.body.onmousemove = function(e) {
-      const mouseX = (e.clientX / window.innerWidth) * 100;
+      const mouseX = ((e.clientX / window.innerWidth) * 100)-1;
       document.documentElement.style.setProperty('--x',(mouseX)+'vw');
     }
 
     
-    /*let tl = gsap.timeline({
+    let tl = gsap.timeline({
       scrollTrigger: {
-        trigger: '#title2',
+        trigger: '.title',
 
-        start: '-100% center',
-        end: 'bottom center',
+        start: '-50% top',
+        end: 'bottom top',
         scrub: true,
-        markers: true,
+        markers: false,
       }
     });
 
-    tl.to('#title2',{
-      x: 800
-    })*/
+    tl.to('.title',{
+      opacity: 0,
+      scale: 1.1
+    });
+    tl.to('.subtitle',{
+      start: '-50% top',
+      opacity: 0,
+    });
+
   }
 }

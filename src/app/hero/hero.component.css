@@ -1,12 +1,18 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 h1{
-    margin-top: 7vh;
-    font-size: 8em;
+    margin-top: 6vh;
+    font-size: 7em;
     text-align: center;
+    font-family: 'Mosk', sans-serif;
+    text-transform: uppercase;
 }
 
 h2{
     font-size: 2em;
-    margin-top: 5vh;
+    margin-top: 3vh;
     text-align: center;
 }
 
@@ -48,4 +54,44 @@ h2{
 
 #white-display{
     background-color: white;
+}
+
+nav{
+    padding-top: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    color: black;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+#black-display nav a{
+    color: white;
+}
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3vh;
+}
+
+.button{
+    display: block;
+    text-align: center;
+    color: black;
+    height: 5vh;
+    width: 40%;
+    vertical-align: middle;
+    line-height: 5vh;
+    font-size: 1.3em;
+    border-color: black;
+}
+
+#black-display .button{
+    color: white;
+    border-color: white;
 }

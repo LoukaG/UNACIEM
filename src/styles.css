@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Mosk';
+  src: url('assets/fonts/mosk/Mosk Bold 700.ttf');
+}
+
 html,
 body {
   max-width: 100%;
