@@ -45,7 +45,8 @@ Le projet UNACIEM est un site web one-page dédié à l'entreprise UNACIEM qui s
 
 ## Capture d'Écran
 
-*Bientôt disponible*
+<img width="1906" alt="image" src="https://github.com/LoukaG/UNACIEM/assets/66456642/8ced450e-7f35-487d-af09-fe5ff5376536">
+
 
 ## Licence
 
