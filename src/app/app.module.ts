@@ -9,6 +9,8 @@ import { StrengthsComponent } from './strengths/strengths.component';
 import { ProjectProcessComponent } from './project-process/project-process.component';
 import { FAQComponent } from './faq/faq.component';
 import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { BookAppointmentComponent } from './book-appointment/book-appointment.co
     StrengthsComponent,
     ProjectProcessComponent,
     FAQComponent,
-    BookAppointmentComponent
+    BookAppointmentComponent,
+    PortfolioComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

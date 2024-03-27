@@ -3,10 +3,26 @@
   src: url('assets/fonts/mosk/Mosk Bold 700.ttf');
 }
 
+h1,h2,h3,h4,h5,h6, .mosk {
+  font-family: 'Mosk', sans-serif;
+}
+
 html,
 body {
+  font-family: "Gentium Plus", serif;
   max-width: 100%;
   overflow-x: hidden;
+  --text: #f1f0eb;
+  --background: #070705;
+  --primary: #dbc251;
+  --secondary: #635b39;
+  --accent: #d1b433;
+
+  --light-text: #15140f;
+  --light-background: #fbfbf9;
+  --light-primary: #ae9424;
+  --light-secondary: #c5bd9b;
+  --light-accent: #ccaf2e;
 }
 
 section{
