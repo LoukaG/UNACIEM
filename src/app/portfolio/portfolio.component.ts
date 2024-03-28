@@ -83,7 +83,7 @@ export class PortfolioComponent {
 
   getEmbeddedUrl(): SafeResourceUrl {
     const videoId = this.extractVideoId(this.portfolio[this.selectedIndex]["youtube_url"]);
-    const embeddedUrl = `https://www.youtube.com/embed/${videoId}?rel=0&color=white`;
+    const embeddedUrl = `https://www.youtube-nocookie.com/embed/${videoId}?rel=0&color=white`;
 
     return this.sanitizer.bypassSecurityTrustResourceUrl(embeddedUrl);
   }

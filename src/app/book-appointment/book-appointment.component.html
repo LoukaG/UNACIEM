@@ -3,26 +3,29 @@
         <h1>Nous Contacter</h1>
         <div>
             <label for="name">Votre nom<span class="color-primary">*</span></label>
-            <input type="text" placeholder="Ex: Andy Dufresne" id="name" name="name"> 
+            <input type="text" placeholder="Ex: Andy Dufresne" id="name" name="name" [(ngModel)]="name" required> 
+            <p *ngIf="this.name_error.length > 0" class="color-primary">{{this.name_error}}</p>
         </div> 
 
         <div class="row">
             <div class="six columns">
                 <label for="email">Votre email<span class="color-primary">*</span></label>
-                <input type="email" placeholder="Ex: andydufresne@unaciem.fr" name="email" id="email">
+                <input type="email" placeholder="Ex: andydufresne@unaciem.fr" name="email" id="email" [(ngModel)]="email" required>
+                <p *ngIf="this.email_error.length > 0" class="color-primary">{{this.email_error}}</p>
             </div>
             <div class="six columns">
-                <label for="email">Votre numéro de téléphone</label>
-                <input type="email" placeholder="Ex: 636-555-3226" name="email" id="email">
+                <label for="phone">Votre numéro de téléphone</label>
+                <input type="text" placeholder="Ex: 636-555-3226" name="phone" id="phone" [(ngModel)]="phone">
+                <p *ngIf="this.phone_error.length > 0" class="color-primary">{{this.phone_error}}</p>
             </div>
         </div>
 
         <div>
             <label for="message">Votre message<span class="color-primary">*</span></label>
-            <textarea name="message" id="message" placeholder="Ex: Bonjour, je souhaiterais prendre rendez-vous pour une consultation..."></textarea>
+            <textarea name="message" id="message" placeholder="Ex: Bonjour, je souhaiterais prendre rendez-vous pour une consultation..." [(ngModel)]="message"></textarea>
         </div>
+        <p *ngIf="this.global_error.length > 0" class="color-primary">{{this.global_error}}</p>
 
-        <button class="button-primary">Envoyer</button>
-
+        <button class="button-primary" (click)="sendEmail()">Envoyer</button>
     </div>
 </section>
