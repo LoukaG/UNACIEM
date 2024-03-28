@@ -1,0 +1,27 @@
+.icon{
+    color: var(--primary);
+    font-size: 6em;
+    display: block;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+h1{
+    padding-top: 5vh; 
+    padding-bottom: 5vh;
+}
+
+section{
+    background-color: var(--background-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text);
+}
+
+#NosForces{
+    scroll-behavior: smooth;
+}

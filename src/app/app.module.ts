@@ -11,6 +11,8 @@ import { FAQComponent } from './faq/faq.component';
 import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
+import { PortfolioItemsComponent } from './portfolio/portfolio-items/portfolio-items.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
     ProjectProcessComponent,
     FAQComponent,
     BookAppointmentComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    FooterComponent,
+    PortfolioItemsComponent
   ],
   imports: [
     BrowserModule,
@@ -31,4 +35,5 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+}

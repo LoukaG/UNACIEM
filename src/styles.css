@@ -14,9 +14,10 @@ body {
   overflow-x: hidden;
   --text: #f1f0eb;
   --background: #070705;
+  --background-secondary: #070705f6;
   --primary: #dbc251;
   --secondary: #635b39;
-  --accent: #d1b433;
+  --accent: #d1b433;  
 
   --light-text: #15140f;
   --light-background: #fbfbf9;
@@ -27,5 +28,14 @@ body {
 
 section{
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.button-primary{
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+input:focus, textarea:focus{
+  border-color: var(--primary) !important;
 }

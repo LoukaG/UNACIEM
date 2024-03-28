@@ -1,6 +1,6 @@
 section{
     padding-top: 5vh;
-    background-color: var(--background);
+    background-color: var(--background-secondary);
     color: var(--text);
     display: flex;
     flex-direction: column;
@@ -38,12 +38,6 @@ section{
     width: 100%;
 }
 
-.pageController{
-    display: flex;
-    justify-content: space-between;
-    color: var(--primary)
-}
-
-.pageController div{
-    cursor: pointer;
+#view-portfolio{
+    margin-bottom: 25px;
 }

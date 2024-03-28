@@ -1,32 +1,19 @@
-<section>
-    <div class="container">
-        <h1>Portfolio</h1>
-        <div  *ngIf="portfolio.length > 0">
-            <div *ngIf="portfolio[this.selectedIndex]['youtube_url']" class="video-container">
-                <iframe [src]="getEmbeddedUrl()" title="test" frameborder="0" allowfullscreen class="video"></iframe>
-            </div>
+<section id="Portfolio">
+    <div class="container" id="portfolio-container">
+        <div id="view-portfolio">
+            <h1>Portfolio</h1>
+            <div *ngIf="portfolio.length > 0">
+                <div *ngIf="portfolio[this.selectedIndex]['youtube_url']" class="video-container">
+                    <iframe [src]="getEmbeddedUrl()" frameborder="0" allowfullscreen class="video"></iframe>
+                </div>
 
-            <div *ngIf="!portfolio[this.selectedIndex]['youtube_url']" class="image-container">
-                <img [src]="getCurrentImage()" alt="Selected Image" class="selectedImage">
-            </div>
-            
-            
-        </div>
-        
-        <div class="row thumbnailContainer">
-            <div *ngFor="let item of getPortfolioItems()" class="four columns thumbnail" (click)="selectItem(item['_id'])">
-                <img [src]="item['imageUrl']" alt="Thumbnail 1">
-            </div>
-        </div>
-        <div class="pageController">
-            <div id="pagePrec">
-                <p (click)="previousPage()"><i class='bx bx-left-arrow-alt' ></i> Précédent</p>
-            </div>
-            <div id="pageSuiv">
-                <p (click)="nextPage()">Suivant <i class='bx bx-right-arrow-alt'></i></p>
+                <div *ngIf="!portfolio[this.selectedIndex]['youtube_url']" class="image-container">
+                    <img [src]="getCurrentImage()" alt="Selected Image" class="selectedImage">
+                </div>
             </div>
         </div>
         
+        <app-portfolio-items [portfolio]="portfolio" (selectItemEvent)="this.selectItem($event)" id="portfolio-items"></app-portfolio-items>
     </div>
     
 </section>
