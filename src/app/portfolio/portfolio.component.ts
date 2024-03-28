@@ -34,7 +34,7 @@ export class PortfolioComponent {
         trigger: '#portfolio-container',
         start: '-30% center',
         end: '20% center',
-        scrub: true,
+        scrub: false,
         markers: false,
       }
     });
@@ -53,7 +53,7 @@ export class PortfolioComponent {
         trigger: '#portfolio-items',
         start: '-170% center',
         end: '20% center',
-        scrub: true,
+        scrub: false,
         markers: false,
       }
     });
