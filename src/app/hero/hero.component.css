@@ -54,6 +54,7 @@ h2 {
 #white-display {
     background-color: var(--light-background);
     height: 100vh;
+    color: var(--light-text)
 }
 
 nav {

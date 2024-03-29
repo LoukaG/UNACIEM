@@ -14,14 +14,6 @@ h1{
     padding-bottom: 5vh;
 }
 
-section{
-    background-color: var(--background-secondary);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--text);
-}
-
 #NosForces{
     scroll-behavior: smooth;
 }

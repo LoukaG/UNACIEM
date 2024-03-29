@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
   --text: #f1f0eb;
   --background: #070705;
-  --background-secondary: #070705f6;
+  --background-secondary: #070705fa;
   --primary: #dbc251;
   --secondary: #635b39;
   --accent: #d1b433;  
@@ -29,6 +29,19 @@ body {
 section{
   width: 100vw;
   min-height: 100vh;
+  background-color: var(--background);
+
+  color: var(--text);
+}
+
+.secondary-background{
+  background-color: var(--background-secondary);
+}
+
+.center-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-primary{
