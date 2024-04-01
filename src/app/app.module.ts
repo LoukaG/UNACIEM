@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioItemsComponent } from './portfolio/portfolio-items/portfolio-items.component';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     BookAppointmentComponent,
     PortfolioComponent,
     FooterComponent,
-    PortfolioItemsComponent
+    PortfolioItemsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

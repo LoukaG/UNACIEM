@@ -48,13 +48,17 @@ h2 {
     position: absolute;
     height: 100vh;
     overflow: hidden;
-    z-index: 10;
+    z-index: 101
 }
 
 #white-display {
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
     background-color: var(--light-background);
     height: 100vh;
-    color: var(--light-text)
+    color: var(--light-text);
+    
 }
 
 nav {
